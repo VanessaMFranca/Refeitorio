@@ -30,12 +30,12 @@ export default function LoginScreen({ navigation }) {
         () => console.log('Tabela criada'),
         (tx, error) => console.log('Erro ao criar tabela', error)
       );
-      // tx.executeSql(
-      //   'INSERT OR IGNORE INTO user (username, password) VALUES (?, ?);',
-      //   ['A', '1'],
-      //   () => console.log('Usuário padrão inserido'),
-      //   (tx, error) => console.log('Erro ao inserir usuário padrão', error)
-      // );
+      tx.executeSql(
+        'INSERT OR IGNORE INTO user (username, password) VALUES (?, ?);',
+        ['A', '1'],
+        () => console.log('Usuário padrão inserido'),
+        (tx, error) => console.log('Erro ao inserir usuário padrão', error)
+      );
     });
   };
 
