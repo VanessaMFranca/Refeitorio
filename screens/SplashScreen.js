@@ -18,7 +18,7 @@ export default function SplashScreen() {
   return (
     <View style={styles.container}>
       <Image
-        source={require('./img/logo.jpg')} // Substitua pelo caminho correto da sua imagem
+        source={require('./img/logo.jpg')} // Caminho da imagem
         style={styles.logo}
         resizeMode="contain" // Ajusta a imagem para se adequar ao contêiner
       />
